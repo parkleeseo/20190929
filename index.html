@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day-and-night in africa</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700&display=swap" rel="stylesheet">
+	<style>
+
+	@font-face { font-family: 'HealthsetBambooStd'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetBambooStd.woff') format('woff'); font-weight: normal; font-style: normal; }
+	h1{font-size :30px; text-align: center; color: white; font-family: 'HealthsetBambooStd'; background-color: black; padding-top:5px; padding-bottom:  20px; border-radius: 10%; display: ;}
+	body {background-image: url(dayandnight.jpg); background-repeat: no-repeat;background-size: 1550px;}
+
+	.thum{height: 150px; opacity: 0.3;display:block;margin:0; float: left;margin-top: 400px;}
+	.thum:hover{opacity: 1;}
+
+	.african{height: 200px; opacity: 0.3;display:block;margin:0; float: left; animation: ko 1s infinite linear; margin-top: 410px;position:absolute;margin-left: 140px;}
+	.african:hover{opacity: 1;}
+
+
+	.elephant{height: 180px; opacity: 0.3;display:block; float: left;margin-top: 430px;position: absolute;margin-left: 600px;}
+	.elephant:hover{opacity: 1;}
+
+
+	.bird{height: 200px; opacity: 0.3;display:block;margin:0; float: left;margin-top: 30px;margin-left: 120px;position:absolute;transition: all 0.5s; animation: ffo 2s linear infinite;}
+	.bird:hover{opacity: 1;}
+
+
+	.wind{height: 350px; opacity: 0.3;display:block; float: left;margin-left: 950px; transition: all 4s; animation: ffo 5s linear infinite; z-index : 999; position:absolute; }
+	.wind:hover{opacity: 1;}
+
+	.bug{height: 80px; opacity: 0.3;display:block; float: left;margin-top: 230px;margin-left: 800px; animation: ko 1s infinite linear; position:absolute;}
+	.bug:hover{opacity: 1;}
+
+	.snore{height: 150px; opacity: 0.3;display:block; float: left;margin-top: 440px;margin-left: 780px;position:absolute;}
+	.snore:hover{opacity: 1;}
+
+
+	.wolf{height: 250px; opacity: 0.3;display:block; float: left;margin-top: 400px;margin-left: 1120px;position:absolute;}
+	.wolf:hover{opacity: 1;}
+
+
+	.monkey{height:180px; opacity: 0.3;display:block; float: left;margin-top: 430px;margin-left: 420px;position:absolute;}
+	.monkey:hover{opacity: 1;}
+
+
+	.lion{height: 170px; opacity: 0.3;display:block; float: left;margin-top: 440px;margin-left: 920px;position:absolute;}
+	.lion:hover{opacity: 1;}
+
+	.africa{width: 200px; margin-left: 650px;  display: block; position: absolute;border-radius: 10%;}
+
+
+
+		@keyframes ro {to {opacity: 0; position: absolute; z-index: 0;}}
+		@keyframes lo {to {transform: translateY(-3%); 
+					position: absolute; z-index: 0;}} 
+		@keyframes so {to {transform: translateY(5%);
+					 position: absolute; z-index: 0;}} 
+		@keyframes ffo{to{ width: 200px;}}
+		@keyframes ko{to{ transform: rotate(360deg);}}
+		@keyframes uo{to{ transform: rotate(20deg);}}
+		@keyframes yo{to{ transform: rotate(50deg);}}
+		@keyframes rro{from {left: -203px;} to {left: 200px;}}
+		@keyframes llo{from {top: 7600px;} to {top: 7800px;}}
+		@keyframes go{from {right: : 100px;} to {right: 130px;}}
+		@keyframes rotate{0%{transform: rotate(0deg);}
+		100%{transform: rotate(360deg);}}
+
+
+	</style>
+</head>
+<body>
+
+	<h1>day-and-night in  </h1>
+
+	<img src="africa.gif" class="africa">
+
+	<img src="drum.gif" class="thum" id="a">
+	<audio src="drum.wav" loop id="aa"></audio>
+
+
+
+
+	<img src="african.png" class="african" id="b">
+	<audio src="african.mp3" loop id="bb"></audio>
+
+
+
+	<img src="elephant.gif" class="elephant" id="c">
+	<audio src="elephant.mp3" loop id="cc"></audio>
+
+
+
+	<img src="bird.gif" class="bird" id="d">
+	<audio src="bird.mp3" loop id="dd"></audio>
+
+
+	<img src="lion.gif" class="lion" id="e">
+	<audio src="lion.flac" loop id="ee"></audio>
+
+
+	<img src="wind.gif" class="wind" id="f">
+	<audio src="wind.wav" loop id="ff"></audio>
+
+
+	<img src="bug.gif" class="bug" id="g">
+	<audio src="bug.wav" loop id="gg"></audio>
+
+
+	<img src="snore.gif" class="snore" id="h">
+	<audio src="snore.flac" loop id="hh"></audio>
+
+
+	<img src="wolf.gif" class="wolf" id="i">
+	<audio src="wolf.wav" loop id="ii"></audio>
+
+	<img src="monkey.gif" class="monkey" id="j">
+	<audio src="monkey.wav" loop id="jj"></audio>
+
+
+
+
+
+
+	<script type="text/javascript">
+
+				var astate = "off";
+		a.onclick = function(){
+			if(astate == "off"){
+			a.style.opacity = "1";
+			aa.play();
+			astate = "on";
+
+		}else{
+			a.style.opacity = "0.3";
+			aa.pause();
+			astate = "off";
+		}
+	}
+
+
+
+
+				var bstate = "off";
+		b.onclick = function(){
+			if(bstate == "off"){
+			b.style.opacity = "1";
+			bb.play();
+			bstate = "on";
+
+		}else{
+			b.style.opacity = "0.3";
+			bb.pause();
+			bstate = "off";
+		}
+	}
+
+
+
+			var cstate = "off";
+		c.onclick = function(){
+			if(cstate == "off"){
+			c.style.opacity = "1";
+			cc.play();
+			cstate = "on";
+
+		}else{
+			c.style.opacity = "0.3";
+			cc.pause();
+			cstate = "off";
+		}
+	}
+
+
+			var dstate = "off";
+		d.onclick = function(){
+			if(dstate == "off"){
+			d.style.opacity = "1";
+			dd.play();
+			dstate = "on";
+
+		}else{
+			d.style.opacity = "0.3";
+			dd.pause();
+			dstate = "off";
+		}
+	}
+
+
+
+
+			var estate = "off";
+		e.onclick = function(){
+			if(estate == "off"){
+			e.style.opacity = "1";
+			ee.play();
+			estate = "on";
+
+		}else{
+			e.style.opacity = "0.3";
+			ee.pause();
+			estate = "off";
+		}
+	}
+
+
+
+		var fstate = "off";
+		f.onclick = function(){
+			if(fstate == "off"){
+			f.style.opacity = "1";
+			ff.play();
+			fstate = "on";
+
+		}else{
+			f.style.opacity = "0.3";
+			ff.pause();
+			fstate = "off";
+		}
+	}
+
+
+
+			var gstate = "off";
+		g.onclick = function(){
+			if(gstate == "off"){
+			g.style.opacity = "1";
+			gg.play();
+			gstate = "on";
+
+		}else{
+			g.style.opacity = "0.3";
+			gg.pause();
+			gstate = "off";
+		}
+	}
+
+
+
+		var hstate = "off";
+		h.onclick = function(){
+			if(hstate == "off"){
+			h.style.opacity = "1";
+			hh.play();
+			hstate = "on";
+
+		}else{
+			h.style.opacity = "0.3";
+			hh.pause();
+			hstate = "off";
+		}
+	}
+
+
+
+
+		var istate = "off";
+		i.onclick = function(){
+			if(istate == "off"){
+			i.style.opacity = "1";
+			ii.play();
+			istate = "on";
+
+		}else{
+			i.style.opacity = "0.3";
+			ii.pause();
+			istate = "off";
+		}
+	}
+
+
+
+	var jstate = "off";
+		j.onclick = function(){
+			if(jstate == "off"){
+			j.style.opacity = "1";
+			jj.play();
+			jstate = "on";
+
+		}else{
+			j.style.opacity = "0.3";
+			jj.pause();
+			jstate = "off";
+		}
+	}
+	</script>
+
+</body>
+</html>
